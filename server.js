@@ -10,7 +10,6 @@ const { PORT } = require('./src/constants')
 const express = require('express')
 const app = express()
 const server = http.Server(app)
-const cors = require('cors')
 
 const authRouter = require('./src/routes/auth.router')
 const userRouter = require('./src/routes/user.router')
