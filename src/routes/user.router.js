@@ -14,7 +14,7 @@ userRouter.use((req, res, next) => {
 })
 
 /**
- * @api {get} /user/current Obtener usuario actual
+ * @api {get} /logged/user/current Obtener usuario actual
  * @apiGroup User
  * 
  * @apiSuccessExample Success-Response:
@@ -32,9 +32,10 @@ userRouter.use((req, res, next) => {
 userRouter.get('/user/current', (req, res) => res.json(req.currentUser))
 
 /**
- * @api {get} /posts?own=true Obtener posts
+ * @api {get} /logged/posts?own=true Obtener posts
  * @apiGroup User
  * 
+ * @apiParam {String} ggg uwuwuwuwuwuwu
  * @apiParam {Boolean} own Indica si los posts a buscar son del mismo usuario
  * 
  * @apiSuccessExample Success-Response:
@@ -70,7 +71,7 @@ userRouter.get('/posts', (req, res) => {
 })
 
 /**
- * @api {post} /post Registrar nuevo post
+ * @api {post} /logged/post Registrar nuevo post
  * @apiGroup User
  * 
  * @apiParam {String} title Título del post

@@ -7,7 +7,8 @@ const User = model(
         name: String,
         email: { type: String, unique: true },
         password: String,
-        avatar: String
+        avatar: String,
+        role: [String]
     })
 )
 
